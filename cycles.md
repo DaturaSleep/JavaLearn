@@ -91,3 +91,37 @@ while (true) {
 	i++;
  }
 ```
+
+Пример continue:
+```java
+for(int i = 0 ; i < 10;i++) {
+	if(i%2 == 0) {
+	  continue;
+	 }
+    System.out.println(i);
+}
+```
+
+Пример return:
+```java
+public class Main {
+	public static void main(String[] args) {
+
+		hellYeah();
+
+	}
+	
+	public static int hellYeah() {
+		int i = 0;
+		while(true) {
+			if(i == 10) {
+				return i;
+			}
+			System.out.println(i);
+			i++;
+		}
+	}
+}
+```
+
+Как видно, здесь используется функция которая возвращает нам данные типа int а именно число 10 и после того как сработал return цикл обрывается и функция заканчивает свою работу.
