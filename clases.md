@@ -52,4 +52,38 @@ public class Person {
 ```
 Как мы видим, класс называется ```Person``` с большой буквы Затем внутри класса у нас есть ```String name```, ```String surName``` в которых мы храним имя и фамилию и затем ```int years``` для того, чтобы хранить года этого человека.
 
-После описания класса, мы можем создать новый объект в классе ```Main``` 
+После описания класса, мы можем создать новый объект в классе ```Main``` :
+```java
+public static void main(String[] args) {
+	Person maksym = new Person();		
+}
+```
+Мы создали новый объект ```maksym``` класса ```Person``` 
+Но поля в объекте ```maksym``` ещё пустые. Что если мы хотим записать в ```maksym``` имя, фамилию и количество лет?
+Вот как мы можем это сделать:
+```java
+public class Main {
+	public static void main(String[] args) {
+		Person maksym = new Person();
+		maksym.name = "Maksym";
+		maksym.surName = "Pupkin";
+		maksym.years = 43;
+	}
+}
+```
+Чтобы получить доступ к чему-либо внутри класа, мы используем ```.``` точку. ```maksym.name``` даст нам доступ к имени объекта
+```maksym.surName``` к фамилии и т.д.
+
+Затем мы можем вывестии эти данные на консоль таким способом:
+```java
+public class Main {
+	public static void main(String[] args) {
+		Person maksym = new Person();
+		maksym.name = "Maksym";
+		maksym.surName = "Pupkin";
+		maksym.years = 43;
+		
+		System.out.println("Имя " + maksym.name + " фамилия " + maksym.surName + " кол-во лет " + maksym.years);
+	}
+}
+```
