@@ -23,7 +23,7 @@ public class Main {
 public class Main {
 	public static void main(String[] args) {
 		Radio notMyRadio = new Radio();
-    Radio myRadio = new Radio();
+    		Radio myRadio = new Radio();
 	}
 }
 ```
@@ -33,8 +33,8 @@ public class Main {
 public class Main {
 	public static void main(String[] args) {
 		Radio notMyRadio = new Radio();
-    Radio myRadio = notMyRadio
+   		Radio myRadio = notMyRadio
 	}
 }
 ```
-Как можно заметить, для myRadio мы не создаём нового радио а приписываем старое и если мы вызовем метод ```notMyRadio.equals(myRadio)``` то он вернёт нам ```true```
+Как можно заметить, для myRadio мы не создаём нового радио а приписываем старое и если мы вызовем метод ```notMyRadio.equals(myRadio)``` то он вернёт нам ```true``` что значит, что это один и тот же объект.
